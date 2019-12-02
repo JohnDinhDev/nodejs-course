@@ -1,5 +1,7 @@
-const fs = require("fs");
+const notes = require("./notes");
 
-fs.writeFileSync("./notes.txt", "Hello");
+console.log(notes.getNotes());
 
-fs.appendFileSync("./notes.txt", "\nWorld");
+// const utils = require("./utils");
+
+// console.log(utils.add(utils.name, " Dinh"));
