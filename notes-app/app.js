@@ -1,7 +1,6 @@
+const validator = require("validator");
 const notes = require("./notes");
 
 console.log(notes.getNotes());
 
-// const utils = require("./utils");
-
-// console.log(utils.add(utils.name, " Dinh"));
+console.log(validator.isURL("https/soul-sword.netlify.com"));
