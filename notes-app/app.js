@@ -1,6 +1,6 @@
-const validator = require("validator");
+const chalk = require("chalk");
 const notes = require("./notes");
 
 console.log(notes.getNotes());
 
-console.log(validator.isURL("https/soul-sword.netlify.com"));
+console.log(chalk.green.inverse("Success!"));
