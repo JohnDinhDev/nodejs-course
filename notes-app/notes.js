@@ -64,4 +64,4 @@ const saveNotes = (notes) => {
 	fs.writeFileSync("./notes.json", dataJSON);
 };
 
-module.exports = { getNotes, addNote, removeNote, listNotes, readNote };
+module.exports = { addNote, removeNote, listNotes, readNote };
