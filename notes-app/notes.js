@@ -34,6 +34,13 @@ const removeNote = (title) => {
 	saveNotes(notesToKeep);
 };
 
+const listNotes = () => {
+	const notes = loadNotes();
+	notes.forEach((note) => {
+		console.log(`${chalk.bgGreen.black("Title:")} ${note.title}`);
+	});
+};
+
 const loadNotes = () => {
 	try {
 		return JSON.parse(fs.readFileSync("./notes.json"));
@@ -47,4 +54,4 @@ const saveNotes = (notes) => {
 	fs.writeFileSync("./notes.json", dataJSON);
 };
 
-module.exports = { getNotes, addNote, removeNote };
+module.exports = { getNotes, addNote, removeNote, listNotes };
